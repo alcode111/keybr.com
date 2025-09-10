@@ -1226,6 +1226,21 @@ export class Layout implements XEnumItem {
       Geometry.MATRIX,
     ),
   );
+    static readonly AR_MAC = new Layout(
+    /* id= */ "ar-mac",
+    /* xid= */ 0xae, 
+    /* name= */ "Arabic (Mac)",
+    /* family= */ "arabic", 
+    /* language= */ Language.AR,
+    /* emulate= */ true,
+    /* geometries= */ new Enum(
+      Geometry.ANSI_101,
+      Geometry.ANSI_101_FULL,
+      Geometry.ISO_102,
+      Geometry.ISO_102_FULL,
+      Geometry.MATRIX,
+    ),
+  );
 
   static readonly ALL = new XEnum<Layout>(
     Layout.EN_US,
@@ -1307,6 +1322,7 @@ export class Layout implements XEnumItem {
     Layout.TR_TR_F,
     Layout.AR_SA,
     Layout.AR_SA_102,
+    Layout.AR_MAC,
     Layout.FA_IR,
     Layout.FA_IR_LEGACY,
     Layout.TH_TH,
