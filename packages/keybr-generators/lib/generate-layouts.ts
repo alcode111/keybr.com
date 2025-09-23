@@ -13,6 +13,7 @@ import { pathTo } from "./root.ts";
 for (const [id, layout] of [
   ["ar_sa", importCldr("cldr-keyboards-43.0/keyboards/windows/ar-t-k0-windows.xml")],
   ["ar_sa_102", importCldr("cldr-keyboards-43.0/keyboards/windows/ar-t-k0-windows-102key.xml")],
+  ["ar_mac", importKeymap("layouts/ar_mac.json")],
   ["be_by", importCldr("cldr-keyboards-43.0/keyboards/windows/be-t-k0-windows.xml")],
   ["cs_cz", importCldr("cldr-keyboards-43.0/keyboards/windows/cs-t-k0-windows.xml")],
   ["da_dk", importCldr("cldr-keyboards-43.0/keyboards/windows/da-t-k0-windows.xml")],
